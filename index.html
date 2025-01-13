@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8d7e8;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      background: #ffe4f0;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff4d73;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .floating-image {
+      position: fixed;
+      animation: float 10s infinite ease-in-out;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.5;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(20px, -50px);
+      }
+      100% {
+        transform: translate(-20px, 0);
+      }
+    }
+
+    .text-section {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .text-section div {
+      background: #ffe4f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-section img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .text-section p {
+      max-width: 400px;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <!-- รูปลอย -->
+  <img src="image/k/111.png" alt="Floating Image 1" class="floating-image" style="top: 10%; left: 10%;">
+  <img src="image/k/666.png" alt="Floating Image 2" class="floating-image" style="top: 30%; left: 50%;">
+  <img src="image/k/777.png" alt="Floating Image 3" class="floating-image" style="top: 60%; left: 80%;">
+
+  <!-- เนื้อหา -->
+  <div class="container">
+    <h1 class="title">Happy Anniversary! ❤️</h1>
+    <p class="subtitle">Every moment with you is a treasure. Here's to many more memories together!</p>
+    <div class="grid">
+      <img src="image/1.png" alt="Photo 1">
+      <img src="image/2.jpg" alt="Photo 2">
+      <img src="image/3.jpg" alt="Photo 3">
+      <img src="image/4.jpg" alt="Photo 4">
+      <img src="image/5.jpg" alt="Photo 5">
+      <img src="image/6.jpg" alt="Photo 6">
+      <img src="image/7.jpg" alt="Photo 7">
+      <img src="image/8.jpg" alt="Photo 8">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="title">รักเธอที่สุดดด</h1>
+    <p class="subtitle">Scroll down to see more!</p>
+    <div class="text-section">
+      <img src="flower.png" alt="Flower Image">
+      <p>
+        สวัสดีวันครบรอบนะคนพิเศษของฉัน ❤️ วันนี้เป็นวันสำคัญที่เราจะได้เฉลิมฉลองความรักและช่วงเวลาที่เรามีร่วมกัน 
+        ขอบคุณสำหรับทุกสิ่งที่ทำให้วันของฉันเต็มไปด้วยความสุขและรอยยิ้ม 
+        ฉันสัญญาว่าจะทำให้ความสัมพันธ์ของเราเติบโตขึ้นไปเรื่อยๆ 
+        และสร้างความทรงจำที่งดงามตลอดไป!
+      </p>
+    </div>
+  </div>
+</body>
+</html>
